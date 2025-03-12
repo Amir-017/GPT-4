@@ -65,12 +65,12 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a
-          href="#"
+        <Link
+          href="/openAi"
           className="flex items-center text-[1.1rem] hover:text-cyan-200 transition-colors text-white"
         >
           OPENAI
-        </a>
+        </Link>
       </Typography>{" "}
       <Typography
         as="li"
@@ -78,12 +78,12 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a
-          href="#"
+        <Link
+          href="/caseStudies"
           className="flex items-center text-[1.1rem] hover:text-cyan-200 transition-colors text-white"
         >
           CASE STUDIES
-        </a>
+        </Link>
       </Typography>{" "}
       <Typography
         as="li"
@@ -91,12 +91,12 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a
-          href="#"
+        <Link
+          href="/library"
           className="flex items-center text-[1.1rem] hover:text-cyan-200 transition-colors text-white"
         >
           LIBRARY
-        </a>
+        </Link>
       </Typography>
     </ul>
   );

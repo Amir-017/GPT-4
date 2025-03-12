@@ -37,7 +37,7 @@ const ForHome = () => {
           <div className="w-full lg:w-[50%] h-screen  flex flex-col ">
             <div className="flex flex-col justify-center items-center gap-y-4">
               <div className="text-5xl mt-[3em] font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-gray-500">
-                Let’s Build Something Amazing With GPT-4 OpenAI
+                Let's Build Something Amazing With GPT-4 OpenAI
                 {/* <h1 className="text-pink-700"> </h1>{" "}
                 <h1 className="text-pink-900"></h1> */}
               </div>
