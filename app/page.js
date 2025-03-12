@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "./home/page";
+import Home from "./Home/page";
 import Gpt4 from "./gpt4/page";
 import CaseStudies from "./caseStudies/page";
 import OpenAi from "./openAi/page";
