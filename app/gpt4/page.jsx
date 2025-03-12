@@ -1,10 +1,10 @@
 import React from "react";
-import Home from "./home/page";
+import ForGpt4 from "./ForGpt4";
 
 const page = () => {
   return (
-    <div className="container mx-auto">
-      <Home />
+    <div>
+      <ForGpt4 />
     </div>
   );
 };

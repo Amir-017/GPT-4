@@ -1,10 +1,10 @@
 import React from "react";
-import Home from "./home/page";
+import ForAi from "./ForAi";
 
 const page = () => {
   return (
-    <div className="container mx-auto">
-      <Home />
+    <div>
+      <ForAi />
     </div>
   );
 };

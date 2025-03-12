@@ -1,1 +1,14 @@
+section {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  /* padding: 50px; */
+}
 
+section span {
+  display: block;
+  transform: translateX(-100px);
+  opacity: 0;
+  width: 100% !important;
+}

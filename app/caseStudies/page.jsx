@@ -1,10 +1,10 @@
 import React from "react";
-import Home from "./home/page";
+import ForCase from "./ForCase";
 
 const page = () => {
   return (
-    <div className="container mx-auto">
-      <Home />
+    <div className="">
+      <ForCase />
     </div>
   );
 };

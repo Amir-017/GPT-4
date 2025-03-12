@@ -10,17 +10,18 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import "../app/styles.css";
-
+import { FaBrain } from "react-icons/fa6";
+import Link from "next/link";
+// import "globals.css";
 function Section({ children }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: Infinity });
+  const isInView = useInView(ref, { once: true });
 
   return (
     <section ref={ref}>
       <span
         style={{
-          transform: isInView ? "none" : "translateX(-200px)",
+          transform: isInView ? "none" : "translateY(-200px)",
           opacity: isInView ? 1 : 0,
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
@@ -39,25 +40,12 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a
-          href="#"
-          className="flex font-bold text-2xl items-center cursor-pointer transition-colors text-white"
-        >
-          GPT-4
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <a
-          href="#"
+        <Link
+          href="/"
           className="flex items-center text-[1.1rem] hover:text-cyan-200 transition-colors text-white"
         >
           HOME
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -65,12 +53,12 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a
-          href="#"
+        <Link
+          href="/gpt4"
           className="flex items-center text-[1.1rem] hover:text-cyan-200 transition-colors text-white"
         >
           WHAT IS CHAT GPT4
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -119,16 +107,20 @@ const Header = () => {
 
   return (
     <Section>
-      <Navbar className="sticky top-0  z-10 mt-5 !border-0 mx-auto max-w-screen-3xl px-6 py-3   !bg-transparent ">
-        <div className="flex items-center justify-between text-white flex-row-reverse">
+      <Navbar className="mt-5 sticky top-0  z-10  !border-0 mx-auto max-w-screen-3xl px-6 py-3   !bg-transparent ">
+        <div className="flex items-center justify-between text-white ">
           <Typography
-            as="a"
-            href="#"
-            variant="h6"
-            className="mr-4 cursor-pointer py-1.5 flex gap-x-3"
+            as="li"
+            variant="small"
+            color="blue-gray"
+            className="p-1 font-medium"
           >
-            <Button color="blue">Log IN</Button>
-            <Button color="black">Sign Up</Button>
+            <Link
+              href="/"
+              className="flex font-bold text-2xl items-center cursor-pointer transition-colors text-white"
+            >
+              GPT-4 <FaBrain className="ps-1  text-cyan-200" />
+            </Link>
           </Typography>
           <div className="hidden lg:block">
             <NavList />
