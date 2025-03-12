@@ -37,10 +37,10 @@ function Section({ children }) {
 const ForLib = () => {
   return (
     <Section>
-      <div className="w-full flex">
-        <div className=" w-full flex  gap-x-3 ">
-          <Card className="mt-6 h-full bg-blue-gray-900">
-            <CardHeader color="blue-gray" className="relative h-56">
+      <div className="w-full flex gap-10 flex-col lg:flex-row justify-center items-center">
+        <div className=" w-[40%] ">
+          <Card className="mt-6 h-[20em] lg:h-[37em]  bg-blue-gray-900">
+            <CardHeader color="blue-gray" className="relative ">
               <Image src={img1} alt="card-image" priority={true} />
             </CardHeader>
             <CardBody>
@@ -51,21 +51,23 @@ const ForLib = () => {
               >
                 Sep 26, 2022
               </Typography>
-              <Typography className="text-white">
+              <Typography className="text-white my-[3em]">
                 GPT-4 and Open AI is the future. Let us exlore how it is?
               </Typography>
             </CardBody>
-            <CardFooter className="pt-0">
-              <Button>Read Full Artical</Button>
+            <CardFooter className="pt-0 ">
+              <Button className="readFull">Read Full Artical</Button>
             </CardFooter>
-          </Card>{" "}
-          <Card className="mt-6 w-96 bg-blue-gray-900">
-            <CardHeader color="blue-gray" className="relative h-[5rem]">
+          </Card>
+        </div>
+        <div className="w-[50%] grid  grid-rows-2 gap-4 grid-flow-col md:grid-flow-row">
+          <Card className="mt-6  bg-blue-gray-900">
+            <CardHeader color="blue-gray" className="relative ">
               <Image
                 src={img2}
                 alt="card-image"
-                className="w-full"
                 priority={true}
+                className="max-w-[145%]"
               />
             </CardHeader>
             <CardBody>
@@ -81,12 +83,17 @@ const ForLib = () => {
               </Typography>
             </CardBody>
             <CardFooter className="pt-0">
-              <Button>Read Full Artical</Button>
+              <Button className="readFull">Read Full Artical</Button>
             </CardFooter>
           </Card>{" "}
-          <Card className="mt-6 h-full bg-blue-gray-900">
-            <CardHeader color="blue-gray" className="relative h-[5rem]">
-              <Image src={img3} alt="card-image" priority={true} />
+          <Card className="mt-6  bg-blue-gray-900">
+            <CardHeader color="blue-gray" className="relative h-[5rem] ">
+              <Image
+                src={img3}
+                alt="card-image"
+                priority={true}
+                className="max-w-[145%]"
+              />
             </CardHeader>
             <CardBody>
               <Typography
@@ -101,10 +108,61 @@ const ForLib = () => {
               </Typography>
             </CardBody>
             <CardFooter className="pt-0">
-              <Button>Read Full Artical</Button>
+              <Button className="readFull">Read Full Artical</Button>
+            </CardFooter>
+          </Card>
+          <Card className="mt-6  bg-blue-gray-900">
+            <CardHeader color="blue-gray" className="relative h-[5rem]">
+              <Image
+                src={img4}
+                alt="card-image"
+                priority={true}
+                className="max-w-[145%]"
+              />
+            </CardHeader>
+            <CardBody>
+              <Typography
+                variant="h5"
+                color="white"
+                className="mb-2 text-semibold text-white"
+              >
+                Sep 26, 2022
+              </Typography>
+              <Typography className="text-white">
+                GPT-4 and Open AI is the future. Let us exlore how it is?
+              </Typography>
+            </CardBody>
+            <CardFooter className="pt-0">
+              <Button className="readFull">Read Full Artical</Button>
+            </CardFooter>
+          </Card>{" "}
+          <Card className="mt-6  bg-blue-gray-900">
+            <CardHeader color="blue-gray" className="relative h-[5rem]">
+              <Image
+                src={img5}
+                alt="card-image"
+                priority={true}
+                className="max-w-[145%]"
+              />
+            </CardHeader>
+            <CardBody>
+              <Typography
+                variant="h5"
+                color="white"
+                className="mb-2 text-semibold text-white"
+              >
+                Sep 26, 2022
+              </Typography>
+              <Typography className="text-white">
+                GPT-4 and Open AI is the future. Let us exlore how it is?
+              </Typography>
+            </CardBody>
+            <CardFooter className="pt-0">
+              <Button className="readFull">Read Full Artical</Button>
             </CardFooter>
           </Card>
         </div>
+
         {/* <div className="w-1/2  "></div> */}
       </div>
       ;

@@ -45,11 +45,11 @@ const ForGpt4 = () => {
           </div>
           {/* //////////////// */}
           <div className="w-full flex justify-between items-center mt-20 flex-col md:flex-row">
-            <div className="w-full lg:w-[50%] flex flex-col ">
+            <div className="w-full lg:w-[50%] flex flex-col items-center justify-center   md:items-start md:justify-start">
               <h1 className="w-full capitalize text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-pink-400 text-center md:text-start">
                 The possibilities are beyond your imagination
               </h1>
-              <div className="w-[76%] h-1 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl"></div>
+              <div className="w-[76%] h-1 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl text-center lg:text-start"></div>
             </div>
             <div className="w-full lg:w-[40%] text-end cursor-pointer">
               <p className="text-cyan-200  mt-5 capitalize text-center lg:text-end">
