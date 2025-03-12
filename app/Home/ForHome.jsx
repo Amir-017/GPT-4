@@ -33,10 +33,10 @@ const ForHome = () => {
     <Section>
       {" "}
       <div className="flex flex-col w-full items-center justify-center gap-y-10">
-        <div className="w-full ms-5 lg:ms-0 flex justify-center items-start lg:justify-evenly flex-col lg:flex-row  gap-x-4 lg:gap-x-0 ">
-          <div className="w-full lg:w-[50%] h-screen  flex flex-col ">
+        <div className="w-full ms-5 lg:ms-0 flex justify-evenly flex-col lg:flex-row  gap-x-4 lg:gap-x-0 ">
+          <div className="w-full lg:w-[50%]   flex flex-col ">
             <div className="flex flex-col justify-center items-center gap-y-4">
-              <div className="text-5xl mt-[3em] font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-gray-500">
+              <div className="text-center md:text-start text-5xl mt-[3em] font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-gray-500">
                 Let's Build Something Amazing With GPT-4 OpenAI
                 {/* <h1 className="text-pink-700"> </h1>{" "}
                 <h1 className="text-pink-900"></h1> */}
@@ -47,7 +47,7 @@ const ForHome = () => {
                 alteration boisterous the attachment. Party we years to order
                 allow asked of.
               </h2>
-              <div className="w-full  relative flex   mt-4  ">
+              <div className="w-full  relative flex justify-center items-center   mt-4   ">
                 <Input
                   type="search"
                   color="white"
@@ -60,7 +60,16 @@ const ForHome = () => {
                 <Button
                   size="md"
                   color="white"
-                  className="!absolute right-0 top-0 rounded"
+                  className="!absolute right-0 top-0 rounded hidden md:block"
+                >
+                  Get Started
+                </Button>
+              </div>
+              <div className="w-full block md:hidden">
+                <Button
+                  size="md"
+                  color="white"
+                  className=" right-0 top-0 rounded"
                 >
                   Get Started
                 </Button>
@@ -73,7 +82,7 @@ const ForHome = () => {
                     className="w-[60%] md:w-[40%] lg:w-full "
                   />
                 </div>
-                <div className=" w-full lg:w-[70%]">
+                <div className=" w-full lg:w-[70%] ms-1">
                   <h3 className="text-gray-500 flex justify-center items-center w-full">
                     1,600 people requested access a visit in last 24 hours
                   </h3>

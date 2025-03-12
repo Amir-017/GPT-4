@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .amer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+.align-middle {
+  background-color: white !important;
+}

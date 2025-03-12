@@ -27,7 +27,7 @@ const ForCase = () => {
     <Section>
       <div className="w-full  mt-10  flex flex-col gap-y-10 lg:gap-y-0 lg:flex-row justify-center items-center gap-x-10 container mx-0">
         <div className="w-full lg:w-[30%] flex flex-col gap-y-5">
-          <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-red-500 bg-gradient-to-r from-sky-500 to-indigo-500">
+          <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-red-500 bg-gradient-to-r from-sky-500 to-indigo-500 text-center md:text-start">
             The Future is Now and You Just Need To Realize It. Step into Future
             Today & Make it Happen.
           </h1>
@@ -57,7 +57,7 @@ const ForCase = () => {
               <h1 className="capitalize text-xl font-bold text-white me-0 lg:me-0  flex justify-center">
                 Become the tended active
               </h1>
-              <div className="flex justify-center  h-1">
+              <div className="flex justify-start md:justify-center  h-1">
                 <div className="w-[75%]   bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl"></div>
               </div>
             </div>
@@ -71,10 +71,10 @@ const ForCase = () => {
           {/* //////////////// */}
           <div className="w-full flex flex-col md:flex-row justify-center lg:justify-between items-center mt-20">
             <div className="w-[40%] flex flex-col ">
-              <h1 className="capitalize text-xl font-bold text-white  flex justify-center">
+              <h1 className="capitalize text-xl font-bold text-white  flex justify-start md:justify-center">
                 Message or am nothing
               </h1>
-              <div className="flex justify-center ">
+              <div className="flex justify-start md:justify-center ">
                 <div className="w-[68%]    h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl"></div>
               </div>
             </div>

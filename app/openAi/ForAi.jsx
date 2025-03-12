@@ -29,15 +29,16 @@ const ForAi = () => {
         <div className="w-full  lg:w-[50%] flex justify-center items-center">
           <Image src={ai} alt="ai" className="w-full" priority={true} />
         </div>
-        <div className="w-full  lg:w-[50%] flex flex-col gap-y-[3em] items-start justify-center mt-20">
+        <div className="w-full  lg:w-[50%] flex flex-col gap-y-[3em] items-center md:items-start justify-center mt-20">
           <h1 className="font-bold text-white">
             Request Early Access to Get Started
           </h1>
           <div className="text-4xl font-bold">
-            <h1 className="text-purple-500">The possibilities are beyond</h1>
-            <h1 className="text-purple-400">your imagination</h1>
+            <h1 className="bg-gradient-to-r from-pink-500 to-pink-400 bg-clip-text text-4xl  text-transparent  text-center md:text-start">
+              The possibilities are beyond your imagination
+            </h1>
           </div>
-          <p className="text-cyan-100 ">
+          <p className="text-cyan-100 text-center md:text-start">
             Yet bed any for travelling assistance indulgence unpleasing. Not
             thoughts all exercise blessing. Indulgence way everything joy
             alteration boisterous the attachment. Party we years to order allow
