@@ -38,10 +38,15 @@ const ForLib = () => {
   return (
     <Section>
       <div className="w-full flex gap-10 flex-col lg:flex-row justify-center items-center">
-        <div className=" w-[40%] ">
-          <Card className="mt-6 h-[20em] lg:h-[37em]  bg-blue-gray-900">
+        <div className="w-[60%] lg:w-[40%] ">
+          <Card className="mt-6  lg:h-[37em]  bg-blue-gray-900">
             <CardHeader color="blue-gray" className="relative ">
-              <Image src={img1} alt="card-image" priority={true} />
+              <Image
+                src={img1}
+                alt="card-image"
+                priority={true}
+                className="w-full"
+              />
             </CardHeader>
             <CardBody>
               <Typography
@@ -60,110 +65,112 @@ const ForLib = () => {
             </CardFooter>
           </Card>
         </div>
-        <div className="w-[50%] grid  grid-rows-2 gap-4 grid-flow-col md:grid-flow-row">
-          <Card className="mt-6  bg-blue-gray-900">
-            <CardHeader color="blue-gray" className="relative ">
-              <Image
-                src={img2}
-                alt="card-image"
-                priority={true}
-                className="max-w-[145%]"
-              />
-            </CardHeader>
-            <CardBody>
-              <Typography
-                variant="h5"
-                color="white"
-                className="mb-2 text-semibold text-white"
-              >
-                Sep 26, 2022
-              </Typography>
-              <Typography className="text-white">
-                GPT-4 and Open AI is the future. Let us exlore how it is?
-              </Typography>
-            </CardBody>
-            <CardFooter className="pt-0">
-              <Button className="readFull">Read Full Artical</Button>
-            </CardFooter>
-          </Card>{" "}
-          <Card className="mt-6  bg-blue-gray-900">
-            <CardHeader color="blue-gray" className="relative h-[5rem] ">
-              <Image
-                src={img3}
-                alt="card-image"
-                priority={true}
-                className="max-w-[145%]"
-              />
-            </CardHeader>
-            <CardBody>
-              <Typography
-                variant="h5"
-                color="white"
-                className="mb-2 text-semibold text-white"
-              >
-                Sep 26, 2022
-              </Typography>
-              <Typography className="text-white">
-                GPT-4 and Open AI is the future. Let us exlore how it is?
-              </Typography>
-            </CardBody>
-            <CardFooter className="pt-0">
-              <Button className="readFull">Read Full Artical</Button>
-            </CardFooter>
-          </Card>
-          <Card className="mt-6  bg-blue-gray-900">
-            <CardHeader color="blue-gray" className="relative h-[5rem]">
-              <Image
-                src={img4}
-                alt="card-image"
-                priority={true}
-                className="max-w-[145%]"
-              />
-            </CardHeader>
-            <CardBody>
-              <Typography
-                variant="h5"
-                color="white"
-                className="mb-2 text-semibold text-white"
-              >
-                Sep 26, 2022
-              </Typography>
-              <Typography className="text-white">
-                GPT-4 and Open AI is the future. Let us exlore how it is?
-              </Typography>
-            </CardBody>
-            <CardFooter className="pt-0">
-              <Button className="readFull">Read Full Artical</Button>
-            </CardFooter>
-          </Card>{" "}
-          <Card className="mt-6  bg-blue-gray-900">
-            <CardHeader color="blue-gray" className="relative h-[5rem]">
-              <Image
-                src={img5}
-                alt="card-image"
-                priority={true}
-                className="max-w-[145%]"
-              />
-            </CardHeader>
-            <CardBody>
-              <Typography
-                variant="h5"
-                color="white"
-                className="mb-2 text-semibold text-white"
-              >
-                Sep 26, 2022
-              </Typography>
-              <Typography className="text-white">
-                GPT-4 and Open AI is the future. Let us exlore how it is?
-              </Typography>
-            </CardBody>
-            <CardFooter className="pt-0">
-              <Button className="readFull">Read Full Artical</Button>
-            </CardFooter>
-          </Card>
+        <div className="w-[60%] flex flex-col justify-center items-center gap-4   ">
+          <div className="flex flex-col lg:flex-row gap-4">
+            <Card className="mt-6  bg-blue-gray-900 w-full lg:w-[70%]">
+              <CardHeader color="blue-gray" className="relative ">
+                <Image
+                  src={img2}
+                  alt="card-image"
+                  priority={true}
+                  className="max-w-[145%]"
+                />
+              </CardHeader>
+              <CardBody>
+                <Typography
+                  variant="h5"
+                  color="white"
+                  className="mb-2 text-semibold text-white"
+                >
+                  Sep 26, 2022
+                </Typography>
+                <Typography className="text-white">
+                  GPT-4 and Open AI is the future. Let us exlore how it is?
+                </Typography>
+              </CardBody>
+              <CardFooter className="pt-0">
+                <Button className="readFull">Read Full Artical</Button>
+              </CardFooter>
+            </Card>{" "}
+            <Card className="mt-6  bg-blue-gray-900">
+              <CardHeader color="blue-gray" className="relative ">
+                <Image
+                  src={img3}
+                  alt="card-image"
+                  priority={true}
+                  className="w-full"
+                />
+              </CardHeader>
+              <CardBody>
+                <Typography
+                  variant="h5"
+                  color="white"
+                  className="mb-2 text-semibold text-white"
+                >
+                  Sep 26, 2022
+                </Typography>
+                <Typography className="text-white">
+                  GPT-4 and Open AI is the future. Let us exlore how it is?
+                </Typography>
+              </CardBody>
+              <CardFooter className="pt-0">
+                <Button className="readFull">Read Full Artical</Button>
+              </CardFooter>
+            </Card>
+          </div>
+          <div className="flex flex-col lg:flex-row gap-4">
+            <Card className="mt-6  bg-blue-gray-900">
+              <CardHeader color="blue-gray" className="relative ">
+                <Image
+                  src={img4}
+                  alt="card-image"
+                  priority={true}
+                  className="w-full"
+                />
+              </CardHeader>
+              <CardBody>
+                <Typography
+                  variant="h5"
+                  color="white"
+                  className="mb-2 text-semibold text-white"
+                >
+                  Sep 26, 2022
+                </Typography>
+                <Typography className="text-white">
+                  GPT-4 and Open AI is the future. Let us exlore how it is?
+                </Typography>
+              </CardBody>
+              <CardFooter className="pt-0">
+                <Button className="readFull">Read Full Artical</Button>
+              </CardFooter>
+            </Card>{" "}
+            <Card className="mt-6  bg-blue-gray-900">
+              <CardHeader color="blue-gray" className="relative ">
+                <Image
+                  src={img5}
+                  alt="card-image"
+                  priority={true}
+                  className="w-full"
+                />
+              </CardHeader>
+              <CardBody>
+                <Typography
+                  variant="h5"
+                  color="white"
+                  className="mb-2 text-semibold text-white"
+                >
+                  Sep 26, 2022
+                </Typography>
+                <Typography className="text-white">
+                  GPT-4 and Open AI is the future. Let us exlore how it is?
+                </Typography>
+              </CardBody>
+              <CardFooter className="pt-0">
+                <Button className="readFull">Read Full Artical</Button>
+              </CardFooter>
+            </Card>
+          </div>
         </div>
-
-        {/* <div className="w-1/2  "></div> */}
       </div>
       ;
     </Section>

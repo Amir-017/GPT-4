@@ -47,7 +47,7 @@ const ForHome = () => {
                 alteration boisterous the attachment. Party we years to order
                 allow asked of.
               </h2>
-              <div className="w-full  relative flex justify-center items-center   mt-4   ">
+              {/* <div className="w-full  relative flex justify-center items-center   mt-4   ">
                 <Input
                   type="search"
                   color="white"
@@ -73,7 +73,33 @@ const ForHome = () => {
                 >
                   Get Started
                 </Button>
+              </div> */}
+              <div className="relative flex w-full me-[20px] lg:me-0">
+                <Input
+                  type="email"
+                  label="Email Address"
+                  className="pr-20"
+                  containerProps={{
+                    className: "min-w-0",
+                  }}
+                />
+                <Button
+                  size="sm"
+                  className="!absolute right-1 top-1 rounded font-extrabold text-black hidden md:block"
+                >
+                  Get Started
+                </Button>
               </div>
+              <div className="w-full justify-start block md:hidden">
+                <Button
+                  size="sm"
+                  color="white"
+                  className=" right-0 top-0 rounded font-extrabold text-black"
+                >
+                  Get Started
+                </Button>
+              </div>
+
               <div className="mt-4 w-full flex justify-center items-center flex-col gap-y-4 lg:flex-row  lg:gap-y-0">
                 <div className="w-full lg:w-[30%] flex justify-center items-center">
                   <img
