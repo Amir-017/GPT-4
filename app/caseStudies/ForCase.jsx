@@ -54,10 +54,10 @@ const ForCase = () => {
           {/* //////////////// */}
           <div className="w-full flex flex-col md:flex-row justify-center lg:justify-between items-center mt-20">
             <div className="w-[40%] flex flex-col ">
-              <h1 className="capitalize text-xl font-bold text-white me-0 lg:me-0  flex justify-center">
+              <h1 className="capitalize text-xl font-bold text-white me-0 lg:me-0  text-center ">
                 Become the tended active
               </h1>
-              <div className="flex justify-start lg:justify-center  h-1">
+              <div className="flex justify-center  h-1">
                 <div className="w-[75%]   bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl"></div>
               </div>
             </div>
@@ -71,10 +71,11 @@ const ForCase = () => {
           {/* //////////////// */}
           <div className="w-full flex flex-col md:flex-row justify-center lg:justify-between items-center mt-20">
             <div className="w-[40%] flex flex-col ">
-              <h1 className="capitalize text-xl font-bold text-white  flex justify-start md:justify-center">
+              <h1 className="capitalize text-xl font-bold text-white me-0 lg:me-0  text-center ">
                 Message or am nothing
               </h1>
-              <div className="flex justify-start lg:justify-center ">
+
+              <div className="flex justify-center ">
                 <div className="w-[68%]    h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl"></div>
               </div>
             </div>
